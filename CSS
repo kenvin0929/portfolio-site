@@ -1,0 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typing Effect */
+#typing {
+  font-size: 1.2rem;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button Hover */
+.btn {
+  display: inline-block;
+  background: #0077ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #005fcc;
+  transform: scale(1.05);
+}
+
+/* Card Hover */
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}

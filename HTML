@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Hello, I'm <span class="highlight">John Doe</span></h2>
+      <p><span id="typing"></span></p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about reveal">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="assets/profile.jpg" alt="Profile">
+      <p>
+        I'm a full-stack web developer with a love for crafting clean, modern websites.
+        I specialize in HTML, CSS, and JavaScript, and I’m always excited to learn new technologies. 
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects reveal">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card"> <h3>Project One</h3><p>A cool web app built with HTML, CSS, JS.</p></div>
+      <div class="project-card"> <h3>Project Two</h3><p>A responsive landing page for a client.</p></div>
+      <div class="project-card"> <h3>Project Three</h3><p>An interactive dashboard with charts.</p></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact reveal">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 John Doe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
